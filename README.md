@@ -29,11 +29,8 @@ A Flask-based REST API for managing student records. This project includes endpo
 2. **Create a virtual environment and activate it**
    ```bash
    python -m venv .module
-
- Windows:
-  ```bash
-     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
-     .\.module\Scripts\activate
+   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+   .\.module\Scripts\activate
 
 
 3. **Install dependencies:**
