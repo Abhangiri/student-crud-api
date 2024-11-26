@@ -30,7 +30,7 @@ A Flask-based REST API for managing student records. This project includes endpo
    ```bash
    python -m venv .module
 
-# Windows:
+ Windows:
   ```bash
      Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
      .\.module\Scripts\activate
