@@ -31,38 +31,34 @@ A Flask-based REST API for managing student records. This project includes endpo
    python -m venv .module
 
 # Windows:
-   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
-.\.module\Scripts\activate
+  ```bash
+     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+     .\.module\Scripts\activate
 
 
-3. Install dependencies:
+3. **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
 
-pip install -r requirements.txt
+4. **Set up your .env file:**
+   ```bash
+     FLASK_APP=run.py
+     FLASK_ENV=development
+     DATABASE_URI=mysql+pymysql://<username>:<password>@<host>:<port>/<database_name>
 
+5. **Initialize the database:**
+   ```bash
+   flask db init
+   flask db migrate -m "Initial migration"
+   flask db upgrade
 
-4. Set up your .env file:
-
-FLASK_APP=run.py
-FLASK_ENV=development
-DATABASE_URI=mysql+pymysql://<username>:<password>@<host>:<port>/<database_name>
-
-
-5. Initialize the database:
-
-flask db init
-flask db migrate -m "Initial migration"
-flask db upgrade
-
-
-6. Run the application:
-
-flask run
+6. **Run the application:**
+   ```bash
+   flask run
 
 
-
-Using the API
-
-Access the API documentation at: http://127.0.0.1:5000/apidocs
+#Using the API
+ **Access the API documentation at: http://127.0.0.1:5000/apidocs**
 
 
 
