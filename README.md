@@ -27,10 +27,11 @@ A Flask-based REST API for managing student records. This project includes endpo
    cd student-crud-api
 
 2. **Create a virtual environment and activate it**
-python -m venv .module
+   ```bash
+   python -m venv .module
 
 # Windows:
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 .\.module\Scripts\activate
 
 
